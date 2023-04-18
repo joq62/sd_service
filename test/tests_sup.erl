@@ -29,7 +29,9 @@ init([]) ->
     SupFlags = #{strategy => one_for_all,
                  intensity => 0,
                  period => 1},
-    ChildSpecs = [#{id=>sd,
+    ChildSpecs = [#{id=>log,
+		    start=>{log,start,[]}},
+		  #{id=>sd,
 		    start=>{sd,start_link,[]}}],
     {ok, {SupFlags, ChildSpecs}}.
 

@@ -2,6 +2,7 @@ all:
 	rm -rf  *~ */*~ src/*.beam test/*.beam test_ebin erl_cra*;
 	rm -rf _build logs log log_dir  *.pod_dir;
 	rm -rf _build test_ebin ebin;
+	rm -rf logs;
 	rm -rf Mnesia.*;
 	rm -rf *.dir;
 	rm -f rebar.lock;
@@ -26,6 +27,7 @@ build:
 	rm -rf deployments *_info_specs;
 	rm -rf _build test_ebin ebin;
 	rm -rf common;
+	rm -rf logs;
 	rm -rf log_provider;
 	rm -f  rebar.lock;
 	mkdir ebin;		
@@ -39,6 +41,7 @@ clean:
 	rm -rf erl_cra*;
 	rm -rf spec.*;
 	rm -rf test_ebin
+	rm -rf logs;
 	rm -rf ebin;
 	rm -rf Mnesia.*;
 	rm -rf *.dir;
@@ -51,6 +54,7 @@ eunit:
 	rm -rf erl_cra*;	
 	rm -rf test_ebin
 	rm -rf ebin;
+	rm -rf logs;
 	rm -rf Mnesia.*;
 	rm -rf *.dir;
 	rm -f rebar.lock;
